@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anish Gupta | AWS Backend Engineer</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --soft: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: #111827;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 90px 20px 70px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: 0 auto 25px;
+      opacity: 0.95;
+      font-size: 18px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      background: white;
+      color: var(--primary);
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.25s ease;
+    }
+
+    .resume-btn:hover {
+      background: #e0e7ff;
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      margin-bottom: 22px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: var(--soft);
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #cbd5f5;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    .analytics-note {
+      font-size: 12px;
+      opacity: 0.5;
+      margin-top: 10px;
+    }
+
+    /* Fade-in animation */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    .fade.show {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Anish Gupta</h1>
+  <p>
+    AWS Backend Engineer focused on designing reliable, scalable,
+    and cost-aware backend systems using serverless and
+    event-driven architectures.
+  </p>
+
+  <a href="Anish_Gupta_AWS_Backend_Engineer.pdf" download class="resume-btn">
+    📄 Download Resume
+  </a>
+
+  <nav style="margin-top: 30px;">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I’m an AWS Backend Engineer who enjoys building cloud-native backend
+      systems that are reliable, scalable, and easy to operate in production.
+      My work focuses on backend APIs, asynchronous workflows, and
+      event-driven systems on AWS.
+    </p>
+    <p>
+      I care deeply about failure handling, idempotency, observability,
+      and writing clean code that holds up under real-world load.
+      I enjoy working close to production—debugging issues, improving
+      performance, and making systems simpler over time.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="fade">
+  <h2>Skills & Tools</h2>
+  <div class="card skills">
+    <span>AWS (Lambda, SQS, DynamoDB, API Gateway, S3)</span>
+    <span>Backend System Design</span>
+    <span>Serverless Architecture</span>
+    <span>Event-Driven Systems</span>
+    <span>Kafka</span>
+    <span>Java</span>
+    <span>Node.js</span>
+    <span>TypeScript</span>
+    <span>SQL</span>
+    <span>GitHub Actions</span>
+  </div>
+</section>
+
+<section id="projects" class="fade">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Serverless Batch Job Orchestrator</h3>
+    <p>
+      Designed a serverless backend orchestration system on AWS to manage
+      asynchronous batch workflows with retries, failure isolation,
+      and idempotent state tracking. Built using Lambda and SQS,
+      with DynamoDB for job state management.
+    </p>
+    <p>
+      The system scales automatically with workload spikes and
+      significantly reduces manual intervention during failures.
+    </p>
+    <p><strong>Tech:</strong> AWS Lambda, SQS, DynamoDB, Serverless Framework</p>
+  </div>
+
+  <div class="card">
+    <h3>Kafka Event Processing Pipeline</h3>
+    <p>
+      Built a Kafka-based event processing pipeline to handle high-volume
+      message streams with at-least-once delivery guarantees.
+      Implemented idempotent consumers and optimized SQL queries
+      for downstream persistence.
+    </p>
+    <p>
+      Focused on correctness, fault tolerance, and observability
+      for production workloads.
+    </p>
+    <p><strong>Tech:</strong> Kafka, Java, SQL</p>
+  </div>
+</section>
+
+<section id="journey" class="fade">
+  <h2>My Engineering Journey</h2>
+  <div class="card">
+    <p>
+      I started with backend APIs and gradually moved into distributed
+      and event-driven systems, learning how real systems behave under
+      load and imperfect data.
+    </p>
+    <p>
+      Over time, I’ve focused more on AWS-native architectures,
+      serverless design, and building systems that are resilient,
+      observable, and cost-aware.
+    </p>
+    <p>
+      Currently preparing for the
+      <strong>AWS Solutions Architect – Associate</strong>,
+      with emphasis on real-world backend system design.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>
+      📧 <a href="mailto:your.email@gmail.com">your.email@gmail.com</a><br/>
+      💼 <a href="https://linkedin.com/in/yourprofile">LinkedIn</a><br/>
+      💻 <a href="https://github.com/yourgithub">GitHub</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Anish Gupta • AWS Backend Engineer
+  <div class="analytics-note">
+    This site uses basic analytics for improvement purposes.
+  </div>
+</footer>
+
+<script>
+  const elements = document.querySelectorAll('.fade');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
